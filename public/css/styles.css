@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+.espaciado {
+    height: 20px;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+main {
+    padding: 5%;
+    margin: auto;
+    width: 90vw;
+}
+
+footer {
+    background-color: white;
+    padding: 5%
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h2.footer {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.footer-2 {
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+    color: #666;
+}
+
+.espaciado-2 {
+    height: 30px;
+}
+
+.espaciado-3 {
+    height: 30px;
+}
+
+.espaciado-para-svgs {
+    margin-bottom: -15px;
+}
+
+.encabezado {
+    background-color: #EAC926;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.tamano-foto {
+    width: 200px;
+    height: 100px;
+}
+
+#center {
+    text-align: center;
+}
+
+#center-blue {
+    color: white;
+    text-align: center;
+    background-color: #1259c3;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 5px;
+    margin: auto
+}
+
+img {
+    margin: auto;
+    width: 100%;
+}
+
+article {
+    margin: 15px;
+    background-color: white;
+}
+
+.circle {
+    background-color: white;
+    border:1px solid #39b54a;    
+    height: 50px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width: 50px;
+}
+
+.carrito-de-compras {
+    margin-bottom: -2.5%;
+    margin-top: 7.5%;
+    text-align: center;
+}
+
+.descuento {
+    color: #39b54a;
+}
+
+.linea-separadora {
+    border-top: 1px solid #ebebeb;
+}
+
+nav {
+    display: none;
+}
+
+/* Although the title says 361px, it's extremelly small for nowadays phoness*/
+@media (min-device-width: 480px) {
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    nav {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .espaciado-3 {
+        display: none;
+    }
+}
