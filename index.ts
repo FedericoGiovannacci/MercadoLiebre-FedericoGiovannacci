@@ -21,3 +21,5 @@ let federico: Persona = {
     peso: 90,
     nombre: "Federico"
 }
+
+

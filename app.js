@@ -20,3 +20,4 @@ app.use(express.json())
 app.listen(app.get('port'), console.log(`Server initialized on port: http://localhost:${app.get('port')}`))
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, './views/home.html')))
+
