@@ -8,6 +8,7 @@
 
 body {
     background-color: #ebebeb;
+    font-family: Roboto;
 }
 
 main {
@@ -19,6 +20,10 @@ main {
 footer {
     background-color: white;
     padding: 5%
+}
+
+ul {
+    padding: 0%;
 }
 
 h1 {
@@ -57,7 +62,7 @@ h3 {
 }
 
 .espaciado-3 {
-    height: 30px;
+    height: 25px;
 }
 
 .espaciado-para-svgs {
@@ -68,11 +73,49 @@ h3 {
     background-color: #EAC926;
     font-family: Roboto;
     font-size: 12px;
+    padding-top: 4px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 10px 0px 10px
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul div {
+    margin: 0 5px
+}
+
+.search {
+    align-self: center;
+    justify-content: space-around;
+}
+
+.searchTerm {
+    width: 25vw;
+    height: 3vh;
+    margin-left: 2vw;
+}
+
+.searchButton {
+    width: 6vw;
+    height: 3vh;
+    margin-right: 2vw
+}
+
+.cuotas-flex {
+    align-self: center;
+    width: 25vw;
+    text-align: right;
 }
 
 .tamano-foto {
-    width: 200px;
-    height: 100px;
+    width: 30vw;
+    height: 100%;
 }
 
 #center {
@@ -110,8 +153,7 @@ article {
 }
 
 .carrito-de-compras {
-    margin-bottom: -2.5%;
-    margin-top: 7.5%;
+    margin-top: 2.5%;
     text-align: center;
 }
 
@@ -127,14 +169,20 @@ nav {
     display: none;
 }
 
+.margin-top-image {
+    margin-top: -2%;
+}
+
 /* Although the title says 361px, it's extremelly small for nowadays phoness*/
-@media (min-device-width: 480px) {
+@media (min-device-width: 574px) {
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 20px 0px 20px;
     }
 
     .burger-menu {
@@ -143,5 +191,21 @@ nav {
 
     .espaciado-3 {
         display: none;
+    }
+
+    .margin-top-image {
+        margin-top: auto;
+    }
+}
+
+@media (min-device-width: 650px) {
+    .encabezado {
+        font-size: 14px;
+    }
+}
+
+@media (min-device-width: 900px) {
+    .encabezado {
+        font-size: 16px;
     }
 }

@@ -12,29 +12,30 @@
     </head>
 <body>
     <header class="encabezado">
-        <div id="center"><img class="tamano-foto" src="/images/logo-mercado-liebre.svg" alt="Logo de Mecadolibre"></div>
-        <div class="search" id="center">
-            <input type="text" class="searchTerm" placeholder="Buscar productos, marcas">
-            <button type="submit" class="searchButton">
-                <i class="fa fa-search"></i>
-            </button>
+        <div class="header-flex">
+            <div id="center"><img class="tamano-foto" src="/images/logo-mercado-liebre.svg" alt="Logo de Mecadolibre"></div>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Buscar productos, marcas">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="espaciado"></div>
+            <div class="cuotas-flex"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</div>
         </div>
-        <div class="espaciado"></div>
-        <div id="center"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</div>
         <nav>
             <ul>
-                <li>Ofertas</li>
-                <li>Tiendas Oficiales</li>
-                <li>Vender</li>
-                <li>Ayuda</li>
+                <div>Ofertas</div>
+                <div>Tiendas Oficiales</div>
+                <div>Vender</div>
+                <div>Ayuda</div>
             </ul>
-            <ul>
-                <li>Creá tu cuenta <i class="fa-regular fa-id-card"></i></li>
-                <li>Ingresá <i class="fa-solid fa-right-to-bracket"></i></li>
-                <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
+            <ul class="">
+                <div>Creá tu cuenta <i class="fa-regular fa-id-card"></i></div>
+                <div>Ingresá <i class="fa-solid fa-right-to-bracket"></i></div>
+                <div>Mis compras <i class="fa-solid fa-basket-shopping"></i></div>
             </ul>
         </nav>
-        <div class="espaciado-2"></div>
         <div class="burger-menu" id="center-blue">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke= "white" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -44,8 +45,8 @@
             </svg>
         </div>
         <div class="espaciado-3"></div>
-        <div><img src = "/images/img-home-banner.jpg" alt = "Banner principal"></div>
     </header>
+    <div class="margin-top-image"><img src = "/images/img-home-banner.jpg" alt = "Banner principal"></div>
     <main>
         <section>
             <h1>Basado en tu última visita</h1>
