@@ -34,7 +34,7 @@ h1 {
 
 h2 {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -57,6 +57,11 @@ h3 {
     color: #666;
 }
 
+.nombre-producto {
+    margin: 0 10px 0 30px;
+    display: flex;
+}
+
 .espaciado-2 {
     height: 30px;
 }
@@ -74,6 +79,7 @@ h3 {
     font-family: Roboto;
     font-size: 12px;
     padding-top: 4px;
+    padding-bottom: 10px;
 }
 
 .header-flex {
@@ -119,7 +125,7 @@ nav ul div {
 }
 
 #center {
-    text-align: center;
+    text-align: center
 }
 
 #center-blue {
@@ -145,16 +151,32 @@ article {
 .circle {
     background-color: white;
     border:1px solid #39b54a;    
-    height: 50px;
+    height: 40px;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width: 50px;
+    width: 40px;
 }
 
 .carrito-de-compras {
-    margin-top: 2.5%;
-    text-align: center;
+    display: flex;
+    margin: -20px 25px 0 0;
+    justify-content: end;
+}
+
+.alineado-precio-descuento {
+    display: flex;
+    align-items: center;
+}
+
+.alineado-precio-descuento h2 {
+    flex-grow: 70;
+    margin: 0 0 0 30px;
+}
+
+.alineado-precio-descuento h3 {
+    flex-grow: 30;
+    margin: 0 10px 0 10px;
 }
 
 .descuento {
@@ -170,11 +192,15 @@ nav {
 }
 
 .margin-top-image {
-    margin-top: -2%;
+    margin-bottom: -5%;
 }
 
 /* Although the title says 361px, it's extremelly small for nowadays phoness*/
 @media (min-device-width: 574px) {
+    .encabezado {
+        padding-bottom: 0px;
+    }
+
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -194,18 +220,32 @@ nav {
     }
 
     .margin-top-image {
-        margin-top: auto;
+        margin-bottom: -5%;
     }
 }
 
 @media (min-device-width: 650px) {
     .encabezado {
         font-size: 14px;
+        padding-bottom: 0px;
+    }
+
+    .fila-1 {
+        display: flex;
+    }
+
+    .fila-2 {
+        display: flex;
     }
 }
 
-@media (min-device-width: 900px) {
+@media (min-device-width: 1200px) {
     .encabezado {
         font-size: 16px;
+        padding-bottom: 0px;
+    }
+
+    section {
+        display: flex;
     }
 }
