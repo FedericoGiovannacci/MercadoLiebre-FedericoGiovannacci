@@ -5,6 +5,7 @@ const morgan = require('morgan') //Morgan will tell us all the activities perfor
 const { allowedNodeEnvironmentFlags } = require('process')
 const exp = require('constants')
 
+// Defining important and reusable paths of the program
 const publicPath = path.join(__dirname, '/public')
 
 // Defining the port
@@ -20,4 +21,7 @@ app.use(express.json())
 app.listen(app.get('port'), console.log(`Server initialized on port: http://localhost:${app.get('port')}`))
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, './views/home.html')))
+app.post('/', (req, res) => res.sendFile(path.join(__dirname, './views/home.html')))
+app.get('/register', (req, res) => res.sendFile(path.join(__dirname, './views/register.html')))
+app.get('/login', (req, res) => res.sendFile(path.join(__dirname, './views/login.html')))
 

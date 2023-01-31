@@ -195,6 +195,63 @@ nav {
     margin-bottom: -5%;
 }
 
+form div {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    align-items: center;
+}
+
+div input {
+    width: 95%;
+    border: none;
+    border-radius: 3px;
+    padding: 2%;
+}
+
+div input::placeholder {
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    margin-left: 5%;
+}
+
+input[type="checkbox"] {
+    margin-left: 5%;
+}
+
+li label {
+    margin-left: 5%;
+}
+
+form ul li {
+    margin-bottom: 5%;
+}
+
+div button {
+    background-color: #1259c3;
+    border: none;
+    border-radius: 5px;
+    width: 12vw;
+    height: 4vh;
+    font-weight: bold;
+    color: white;
+} 
+
+.login-button {
+    background-color: #1259c3;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    height: 4vh;
+    font-weight: bold;
+    color: white;
+} 
+
+.user-profile {
+    width: 80%;
+}
 /* Although the title says 361px, it's extremelly small for nowadays phoness*/
 @media (min-device-width: 574px) {
     .encabezado {
