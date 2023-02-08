@@ -21,7 +21,7 @@ app.use(express.json())
 app.listen(app.get('port'), console.log(`Server initialized on port: http://localhost:${app.get('port')}`))
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, './views/home.html')))
-app.post('/', (req, res) => res.sendFile(path.join(__dirname, './views/home.html')))
+app.post('/', (req, res) => res.redirect('/'))
 app.get('/register', (req, res) => res.sendFile(path.join(__dirname, './views/register.html')))
 app.get('/login', (req, res) => res.sendFile(path.join(__dirname, './views/login.html')))
 
